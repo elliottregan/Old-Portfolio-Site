@@ -1,0 +1,239 @@
+/* @group Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* @end */
+
+body {
+  height: 100%;
+  background: url(../img/project_papper.png) #e7e7e7;
+  font: 1.1em Economica, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  background: url(../img/inflicted.png) #f7f7f7;
+  -moz-box-shadow: inset 0 -10px 20px rgb(0, 0, 0);
+  -webkit-box-shadow: inset 0 -10px 20px rgb(0, 0, 0);
+  box-shadow: inset 0 -10px 20px rgb(0, 0, 0);
+}
+
+header h1 {
+  position: relative;
+  color: #ffffff;
+  font: 4em Economica;
+  margin: 20px 0px 0px 20px;
+}
+
+header h1:hover {
+  color: #e5be57;
+}
+
+header h2 {
+  position: relative;
+  color: #d5d5d5;
+  margin: 0px 20px 35px 20px;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 8px;
+}
+
+nav li {
+  display: inline;
+  color: #fed75e;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin-left: 6px;
+  padding: 2px 6px;
+}
+nav li:hover {
+  border: 1px solid #fee081;
+  padding: 1px 5px;
+  background-color: rgba(254, 215, 94, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  background-color: rgba(189, 189, 189, 0.16);
+  border: 1px dotted #00a2cc;
+  padding: 0 2px;
+}
+
+#main a:hover {
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+}
+
+#main anot([href^="mailto"]):hover:after {
+  content: " - " attr(href);
+  color: #686868;
+  font-size: .8em;
+}
+
+#main a[href^="mailto"] {
+  color: #00a2cc;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+#main a[href^="mailto"]:hover {
+  color: #73c9f6;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+}
+
+#main_wrapper {
+  padding: 40px;
+}
+
+#main {
+  position: relative;
+  margin-top: 150px;
+  width: 100%;
+}
+
+#main h1 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 2.5em;
+  color: #595959;
+  font-weight: bold;
+  text-shadow: 0 2px 0 #ffffff;
+}
+
+#main h2{
+  color: #00a2cc;
+  font-size: 1.8em;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+#main h3 {
+  font-size: 1.2em;
+  margin: 2px 0 -4px;
+  color: #555555;
+  cursor: pointer;
+}
+
+#main h3.active {
+  color: #000000;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+#main h3.active::after {
+  content: " <";
+}
+
+#main h3 ~ .info {
+  position: absolute;
+  margin: 20px 0px 40px 160px;
+  top: 50px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  height: 100%;
+}
+
+#main h3 ~ .info.visible {
+  display: block;
+}
+
+#main h4 {
+  color: #000000;
+  font-size: 1.4em;
+  text-shadow: 0 2px 0 #ffffff;
+}
+
+.info img {
+  text-align: center;
+  max-height: 420px;
+  max-width: 500px;
+}
+
+#main ul {
+  margin-left: 10px;
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+#main p {
+  margin-bottom: 12px;
+  font: .8em Cutive;
+  text-indent: 2em;
+}
+
+#main p:first-of-type {
+  margin-top: 12px;
+}
+
+#contact_info {
+  margin: 40px 0px;
+}
+
+#contact_info img{
+  margin: 0px 8px;
+  border: 10px solid #000000;
+  float: left;
+}
+
+#contact_info figcaption {
+  margin: 8px;
+  font-size: 1.5em;
+  bottom: 0;
+  position: relative;
+}
